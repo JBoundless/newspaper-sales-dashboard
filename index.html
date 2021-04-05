@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<body>
+  <head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<h1>Newspaper Circulations 2020 (Qtr 1)</h1>
+<div class="container">
+  <canvas id="myChart" width="400" height="400"></canvas>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+<script>
+var ctx = document.getElementById('myChart').getContext('2d');
+var chart = new Chart(ctx, {
+    // The type of chart we want to create
+    type: 'bar',
+
+    // The data for our dataset
+    data: {
+        labels: ['Wall Street Journal', 'USA Today', 'New York Times', 'The Washington Post', 'Los Angeles Times', 'New York Post', 'Tampa Bay Times', 'Chicago Tribune', 'Newsday', 'Star Tribune'],
+        datasets: [{
+            label: 'Newspaper Circulations Q1 (2020)',
+            backgroundColor: 'rgb(25, 116, 210)',
+            borderColor: 'rgb(25, 116, 210)',
+            data: [994600, 486579, 410562, 206824, 193015, 162478, 137590, 130357, 123905, 123881]
+        }]
+    },
+
+    // Configuration options go here
+    options: {}
+});
+</script>
+</body>
