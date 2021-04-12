@@ -36,6 +36,13 @@ button {
   color: white;
 }
 
+#login-button {
+  padding: 15px;
+  font-size: 12px;
+  background-color: #0096FF;
+  color: white;
+}
+
 button:hover {
   cursor: pointer;
 }
